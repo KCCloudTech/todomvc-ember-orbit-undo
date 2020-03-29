@@ -1,8 +1,8 @@
-# todomvc-ember-orbit
+# todomvc-ember--undo
 
-This is a [TodoMVC](https://github.com/tastejs/todomvc) app that uses
+This fork of todomvc-ember is a [TodoMVC](https://github.com/tastejs/todomvc) app that uses
 [Ember.js](https://github.com/emberjs/ember.js) (Octane edition) and
-[ember-orbit](https://github.com/orbitjs/ember-orbit) on the client-side.
+[ember-orbit](https://github.com/orbitjs/ember-orbit) on the client-side, with an attempt at adding Undo/Redo functions.
 
 This repo also contains a server implementation that uses
 [orbit-server](https://github.com/tchak/orbit-server) to provide

@@ -32,6 +32,7 @@
         <LinkTo @route="completed" @activeClass="selected">Completed</LinkTo>
       </li>
     </ul>
+    <UndoRedoControls />
     {{#if this.completedTodos.length}}
       <button class="clear-completed" {{on "click" this.clearCompleted}}>Clear completed</button>
     {{/if}}
