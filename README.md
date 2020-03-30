@@ -1,4 +1,4 @@
-# todomvc-ember--undo
+# todomvc-ember-orbit-undo
 
 This fork of todomvc-ember is a [TodoMVC](https://github.com/tastejs/todomvc) app that uses
 [Ember.js](https://github.com/emberjs/ember.js) (Octane edition) and
