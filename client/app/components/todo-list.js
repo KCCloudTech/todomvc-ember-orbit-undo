@@ -6,6 +6,7 @@ import { isBlank } from "@ember/utils";
 
 export default class extends Component {
   @service store;
+
   @tracked canToggle;
 
   get allCompleted() {

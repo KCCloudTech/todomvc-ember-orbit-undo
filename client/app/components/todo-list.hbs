@@ -1,3 +1,6 @@
+<section class="footer">
+  <UndoRedoControls />
+</section>
 <header class="header">
   <input class="new-todo" placeholder="What needs to be done?" {{did-insert this.setInitialFocus}}
     {{on "keydown" this.createTodo}}>
@@ -32,7 +35,6 @@
         <LinkTo @route="completed" @activeClass="selected">Completed</LinkTo>
       </li>
     </ul>
-    <UndoRedoControls />
     {{#if this.completedTodos.length}}
       <button class="clear-completed" {{on "click" this.clearCompleted}}>Clear completed</button>
     {{/if}}

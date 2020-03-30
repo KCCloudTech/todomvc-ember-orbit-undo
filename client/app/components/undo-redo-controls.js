@@ -4,14 +4,28 @@ import { inject as service } from "@ember/service";
 
 export default class extends Component {
 
-    @service undo;
+  @service undo;
 
-    @action performUndo() {
-        this.undo.undo();
-    }
+  constructor() {
+    super(...arguments);
 
-    @action performRedo() {
-        this.undo.redo();
-    }
+    this.undo.canUndo;
+  }
+
+  get cannotUndo() {
+    return !this.undo.canUndo;
+  }
+
+  get cannotRedo() {
+    return !this.undo.canRedo;
+  }
+
+  @action performUndo() {
+    this.undo.undo();
+  }
+
+  @action performRedo() {
+    this.undo.redo();
+  }
 
 }

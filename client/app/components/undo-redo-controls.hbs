@@ -1,2 +1,2 @@
-<button class="clear-completed undo-redo" {{on "click" this.performRedo}}>Redo</button>
-<button class="clear-completed undo-redo" {{on "click" this.performUndo}}>Undo</button>
+<button class="undo-redo" disabled={{this.cannotUndo}} {{on "click" this.performUndo}}>Undo</button>
+<button class="undo-redo" disabled={{this.cannotRedo}} {{on "click" this.performRedo}}>Redo</button>
